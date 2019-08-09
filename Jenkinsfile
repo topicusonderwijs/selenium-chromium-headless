@@ -6,8 +6,6 @@ config {
 node() {
    	git.checkout { }
 
-   	dockerfile.validate { }
-
 	def img = dockerfile.build {
 		name = 'selenium-chromium-headless'
 	}
