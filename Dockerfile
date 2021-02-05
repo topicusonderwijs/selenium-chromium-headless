@@ -26,5 +26,5 @@ COPY generate_config /opt/bin/generate_config
 # Generating a default config during build time
 RUN /opt/bin/generate_config > /opt/selenium/config.json
 
-ENTRYPOINT ["java", "-Dwebdriver.chrome.verboseLogging=true", "-jar", "/opt/selenium/selenium-server-standalone.jar" ]
+ENTRYPOINT ["java", "-Dwebdriver.chrome.verboseLogging=true", "-jar", "/opt/selenium/selenium-server-standalone.jar", "-timeout", "86400" ]
 EXPOSE 4444
