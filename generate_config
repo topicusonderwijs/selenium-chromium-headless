@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CHROME_VERSION=$(/opt/chromium/chrome -version | awk '{ print $3 }')
+CHROME_VERSION=$(google-chrome -version | awk '{ print $3 }')
 
 cat <<_EOF
 {
