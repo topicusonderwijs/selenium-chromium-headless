@@ -1,4 +1,4 @@
-FROM selenium/node-base:latest
+FROM selenium/node-base:3
 LABEL authors=papegaaij
 
 USER root
